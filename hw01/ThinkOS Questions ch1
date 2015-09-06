@@ -1,0 +1,15 @@
+ThinkOS Questions
+
+1. Interpreted languages allow for dynamic variables - change from int to double, etc. 
+
+2. Static typing allows you to eliminate the possibility of certain errors in your programs, such as a variable's type unintentionally switching to another type.
+
+3. Missing an argument in a function call.
+
+4. If there are small errors optimization may not display them, and optimization also requires higher compilation time.
+
+5. It varies because gcc configures code differently depending on the type of machine and processor being used.
+
+6. Misspelling a variable name is a syntax error that show in the compiler, while misspelling a function gives a linker (ld) error.
+
+7. A segmentation fault is when a program attempts to read or write an incorrect location in memory.

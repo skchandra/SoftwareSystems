@@ -1,0 +1,9 @@
+1. Amazon marketplace - it seems as though you are ordering from one place, but in reality the site is an aggregate of many buyers in many different places.
+
+2. A program is the commands and instructions, while a process is the running instance of the program. 
+
+3. The purpose of process abstraction is so that the user does not have to deal with running programs in a complicated way and is able to multitask without any effort on their part. This creates the illusion that everything is being run by the same process, when in reality multiple processes are working in tandem.
+
+4. The kernal is the core operations of the OS, like creating threads.
+
+5. A daemon is a process that runs in the background and provides OS services. 

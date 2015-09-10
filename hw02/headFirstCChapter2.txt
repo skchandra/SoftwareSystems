@@ -1,0 +1,9 @@
+Chapter 2 Head First C
+
+2. Stack.c is intended to set everything in an array equal to 17, return it, and then to its original values.
+
+3. The program gives an error upon running due to the array variable. 
+
+4. Foo returns a local variable that main cannot directly access.
+
+5. A similar error; foo() is still returning a local variable. However, it does print a few numbers before exiting. 

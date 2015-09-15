@@ -1,0 +1,15 @@
+1. 6 bits to represent the Georgiar alphabet.
+
+2. 32^2= 1024
+
+3. Memory is the RAM, data stored from a running program, deleted once program ends or shuts down. Storage is the long term data, stored in the hard disk or solid state drive.
+
+4. A GiB is 2^30 bytes, while a GB is 10^9 bytes. 
+
+5. The virtual memory system helps isolate processes from each in a manner similar to a hash table. By creating virtual addresses that point to physical storage, the system is able to ensure that two virtual addresses do not point to the same physical address.
+
+6. The stack builds downwards and the heap builds upwards, so they are placed at opposite ends of the address space in order to keep the widest range of addresses open.
+
+7. A python dictionary would be a good way to create a sparse array.
+
+8. A context switch is when the operating system interrupts a running process, saving its state, and runs a different process. 

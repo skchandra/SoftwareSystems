@@ -31,7 +31,7 @@ void find_track_regex(char pattern[])
 	if (rf != 0) { //print error if any
 		regerror(rf, &rt, buf, 80);
 		printf("recomp failure: '%s'\n", buf);
-		exit(EXIT_FAILURE);
+		exit(1);
 	}
 	int i;
 	for (i = 0; i < NUM_TRACKS; i++) { //print tracks

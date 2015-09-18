@@ -23,6 +23,10 @@ char tracks[][80] = {
 
 void find_track_regex(char pattern[])
 {
+	/* Function to take in a pattern of the string to search for, and use
+	 * regex to find each track that contains the string, and output the 
+	 * tracks that have the string. */
+	 
     regex_t rt;
     if (regcomp(&re, pattern, REG_EXTENDED|REG_ICASE) != 0) //Only returns if case is correct
 		return  0;

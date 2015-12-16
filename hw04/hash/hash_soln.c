@@ -340,6 +340,7 @@ int main ()
     Map *map = make_map(10);
     map_add(map, hashable1, value1);
     map_add(map, hashable2, value2);
+	map_add(map, hashable1, value2);
 
     printf ("Map\n");
     print_map(map);
@@ -348,11 +349,6 @@ int main ()
     value = map_lookup(map, hashable1);
     print_lookup(value);
 
-    value = map_lookup(map, hashable2);
-    print_lookup(value);
-
-    value = map_lookup(map, hashable3);
-    print_lookup(value);
 
     return 0;
 }

@@ -31,37 +31,69 @@ void print_list(Node *head) {
     }
 }
 
-int pop(Node **head) {
-    int retval;
+int pop(Node **head) { //use a pointer to a node, don't create a node
+    first = *head;
     Node *next_node;
-
-    if (*head == NULL) {
-        return -1;
-    }
-
-    next_node = (*head)->next;
-    retval = (*head)->val;
-    free(*head);
-    *head = next_node;
-
+    int retval = first->val;
+    
+    if (first == NULL) return -1;
+    next_node = first->next;
+    free(first);
+    first = next_node;
+    
     return retval;
 }
 
 // Add a new element to the beginning of the list.
 void push(Node **head, int val) {
-    // FILL THIS IN!
+    Node *new_head = make_node(val, *head);
+    *head = new_head;
 }
 
 // Remove the first element with the given value; return the number
 // of nodes removed.
 int remove_by_value(Node **head, int val) {
-    // FILL THIS IN!
+    Node *first = *head;
+    Node *rem;
+
+    if (first == NULL) return 0;
+
+    if (first->val == val) {
+		pop(head);
+		return 1;
+    }
+
+    while (first != NULL) {
+		if (first->next->val == val) {
+			rem = first->next;
+			first->next = rem->next;
+			free(first);
+			return 1;
+		}
+    }
     return 0;
 }
 
 // Reverse the elements of the list without allocating new nodes.
 void reverse(Node **head) {
-    // FILL THIS IN!
+    Node *new_end = *head;
+    Node *n; 
+
+    if (new_end == NULL || new_end->next == NULL) {
+		return; //end reverse because only one node or empty
+    }
+
+    n = new_end->next; //set head's next node
+    new_end->next = NULL; //
+
+    while (n != NULL) {
+		Node *temp;
+		temp = n->next;
+		n->next = new_end;
+		new_end = n;
+		n = temp;
+    }
+    *head = new_end;
 }
 
 

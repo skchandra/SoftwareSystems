@@ -12,6 +12,8 @@ License: Creative Commons Attribution-ShareAlike 3.0
 #include <stdlib.h>
 #include <assert.h>
 
+int length = 0;
+
 typedef struct node {
     int val;
     struct node * next;
@@ -52,6 +54,7 @@ int pop(Node **head) {
 // Add a new element to the beginning of the list.
 void push(Node **head, int val) {
     Node *new_node = make_node(val, *head);
+    while (
     *head = new_node;
 }
 
